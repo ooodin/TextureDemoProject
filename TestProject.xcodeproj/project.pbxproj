@@ -18,7 +18,6 @@
 		EC9AA2E020BB14D800EAAE94 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2DF20BB14D800EAAE94 /* String.swift */; };
 		EC9AA2E220BBC27700EAAE94 /* FlightDetailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2E120BBC27700EAAE94 /* FlightDetailNode.swift */; };
 		EC9AA2E620BBC9F300EAAE94 /* AirportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2E520BBC9F300EAAE94 /* AirportModel.swift */; };
-		EC9AA2E820BBCAA100EAAE94 /* DirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2E720BBCAA100EAAE94 /* DirectionModel.swift */; };
 		EC9AA2EA20BBCADE00EAAE94 /* FlightDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2E920BBCADE00EAAE94 /* FlightDetailsModel.swift */; };
 		EC9AA2EC20BBF5A100EAAE94 /* ASCommonSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2EB20BBF5A100EAAE94 /* ASCommonSpecs.swift */; };
 		ECE6803B20B92B00008847D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE6803A20B92B00008847D8 /* AppDelegate.swift */; };
@@ -46,7 +45,6 @@
 		EC9AA2DF20BB14D800EAAE94 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		EC9AA2E120BBC27700EAAE94 /* FlightDetailNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailNode.swift; sourceTree = "<group>"; };
 		EC9AA2E520BBC9F300EAAE94 /* AirportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportModel.swift; sourceTree = "<group>"; };
-		EC9AA2E720BBCAA100EAAE94 /* DirectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionModel.swift; sourceTree = "<group>"; };
 		EC9AA2E920BBCADE00EAAE94 /* FlightDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsModel.swift; sourceTree = "<group>"; };
 		EC9AA2EB20BBF5A100EAAE94 /* ASCommonSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCommonSpecs.swift; sourceTree = "<group>"; };
 		ECE6803720B92B00008847D8 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +78,18 @@
 				0858B0BAC29598F921F4649F /* Pods_TestProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC310FF820BC23A20024E1C0 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				EC310FEE20BC1B910024E1C0 /* PriceNode.swift */,
+				EC310FF020BC1BAF0024E1C0 /* DurationFlightNode.swift */,
+				EC310FF220BC1C070024E1C0 /* FlightNode.swift */,
+				EC310FF420BC22280024E1C0 /* LayoverNode.swift */,
+				EC310FF620BC223F0024E1C0 /* FlightOptionNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 		ECE6802E20B92B00008847D8 = {
@@ -119,7 +129,6 @@
 				ECE6804C20B93393008847D8 /* FlightListModel.swift */,
 				ECE6804F20B935C6008847D8 /* FlightInfoModel.swift */,
 				EC9AA2E520BBC9F300EAAE94 /* AirportModel.swift */,
-				EC9AA2E720BBCAA100EAAE94 /* DirectionModel.swift */,
 				EC9AA2E920BBCADE00EAAE94 /* FlightDetailsModel.swift */,
 			);
 			path = Models;
@@ -149,6 +158,7 @@
 		ECE6805320B93612008847D8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EC9AA2EB20BBF5A100EAAE94 /* ASCommonSpecs.swift */,
 				EC9AA2DF20BB14D800EAAE94 /* String.swift */,
 			);
 			path = Extensions;
@@ -160,12 +170,7 @@
 				ECE6805920B9421E008847D8 /* FlightNodeCell.swift */,
 				EC9AA2E120BBC27700EAAE94 /* FlightDetailNode.swift */,
 				EC9AA2D920BB00ED00EAAE94 /* FlightSectionCellNode.swift */,
-				EC9AA2EB20BBF5A100EAAE94 /* ASCommonSpecs.swift */,
-				EC310FEE20BC1B910024E1C0 /* PriceNode.swift */,
-				EC310FF020BC1BAF0024E1C0 /* DurationFlightNode.swift */,
-				EC310FF220BC1C070024E1C0 /* FlightNode.swift */,
-				EC310FF420BC22280024E1C0 /* LayoverNode.swift */,
-				EC310FF620BC223F0024E1C0 /* FlightOptionNode.swift */,
+				EC310FF820BC23A20024E1C0 /* Nodes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,7 +310,6 @@
 				ECE6803D20B92B00008847D8 /* FlightListController.swift in Sources */,
 				ECE6805520B93638008847D8 /* FlightListController+DataSource.swift in Sources */,
 				EC9AA2DE20BB08D900EAAE94 /* AppParameters.swift in Sources */,
-				EC9AA2E820BBCAA100EAAE94 /* DirectionModel.swift in Sources */,
 				EC310FF520BC22280024E1C0 /* LayoverNode.swift in Sources */,
 				ECE6803B20B92B00008847D8 /* AppDelegate.swift in Sources */,
 				EC9AA2EC20BBF5A100EAAE94 /* ASCommonSpecs.swift in Sources */,
