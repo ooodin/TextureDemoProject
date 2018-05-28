@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5C3FF21DD8E2CE35EC0C74CE /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0858B0BAC29598F921F4649F /* Pods_TestProject.framework */; };
+		EC310FEF20BC1B910024E1C0 /* PriceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC310FEE20BC1B910024E1C0 /* PriceNode.swift */; };
+		EC310FF120BC1BAF0024E1C0 /* DurationFlightNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC310FF020BC1BAF0024E1C0 /* DurationFlightNode.swift */; };
+		EC310FF320BC1C070024E1C0 /* FlightNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC310FF220BC1C070024E1C0 /* FlightNode.swift */; };
+		EC310FF520BC22280024E1C0 /* LayoverNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC310FF420BC22280024E1C0 /* LayoverNode.swift */; };
+		EC310FF720BC223F0024E1C0 /* FlightOptionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC310FF620BC223F0024E1C0 /* FlightOptionNode.swift */; };
 		EC9AA2DA20BB00ED00EAAE94 /* FlightSectionCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2D920BB00ED00EAAE94 /* FlightSectionCellNode.swift */; };
 		EC9AA2DE20BB08D900EAAE94 /* AppParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2DD20BB08D900EAAE94 /* AppParameters.swift */; };
 		EC9AA2E020BB14D800EAAE94 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9AA2DF20BB14D800EAAE94 /* String.swift */; };
@@ -31,6 +36,11 @@
 		0858B0BAC29598F921F4649F /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		095CF39C2BC4E11CB59290A7 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		76335B19DBA808ACDED2EECC /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		EC310FEE20BC1B910024E1C0 /* PriceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceNode.swift; sourceTree = "<group>"; };
+		EC310FF020BC1BAF0024E1C0 /* DurationFlightNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFlightNode.swift; sourceTree = "<group>"; };
+		EC310FF220BC1C070024E1C0 /* FlightNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNode.swift; sourceTree = "<group>"; };
+		EC310FF420BC22280024E1C0 /* LayoverNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoverNode.swift; sourceTree = "<group>"; };
+		EC310FF620BC223F0024E1C0 /* FlightOptionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOptionNode.swift; sourceTree = "<group>"; };
 		EC9AA2D920BB00ED00EAAE94 /* FlightSectionCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSectionCellNode.swift; sourceTree = "<group>"; };
 		EC9AA2DD20BB08D900EAAE94 /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
 		EC9AA2DF20BB14D800EAAE94 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -151,6 +161,11 @@
 				EC9AA2E120BBC27700EAAE94 /* FlightDetailNode.swift */,
 				EC9AA2D920BB00ED00EAAE94 /* FlightSectionCellNode.swift */,
 				EC9AA2EB20BBF5A100EAAE94 /* ASCommonSpecs.swift */,
+				EC310FEE20BC1B910024E1C0 /* PriceNode.swift */,
+				EC310FF020BC1BAF0024E1C0 /* DurationFlightNode.swift */,
+				EC310FF220BC1C070024E1C0 /* FlightNode.swift */,
+				EC310FF420BC22280024E1C0 /* LayoverNode.swift */,
+				EC310FF620BC223F0024E1C0 /* FlightOptionNode.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,14 +298,19 @@
 			files = (
 				EC9AA2E020BB14D800EAAE94 /* String.swift in Sources */,
 				ECE6804D20B93393008847D8 /* FlightListModel.swift in Sources */,
+				EC310FF120BC1BAF0024E1C0 /* DurationFlightNode.swift in Sources */,
 				ECE6805A20B9421E008847D8 /* FlightNodeCell.swift in Sources */,
+				EC310FF320BC1C070024E1C0 /* FlightNode.swift in Sources */,
+				EC310FEF20BC1B910024E1C0 /* PriceNode.swift in Sources */,
 				ECE6803D20B92B00008847D8 /* FlightListController.swift in Sources */,
 				ECE6805520B93638008847D8 /* FlightListController+DataSource.swift in Sources */,
 				EC9AA2DE20BB08D900EAAE94 /* AppParameters.swift in Sources */,
 				EC9AA2E820BBCAA100EAAE94 /* DirectionModel.swift in Sources */,
+				EC310FF520BC22280024E1C0 /* LayoverNode.swift in Sources */,
 				ECE6803B20B92B00008847D8 /* AppDelegate.swift in Sources */,
 				EC9AA2EC20BBF5A100EAAE94 /* ASCommonSpecs.swift in Sources */,
 				EC9AA2E220BBC27700EAAE94 /* FlightDetailNode.swift in Sources */,
+				EC310FF720BC223F0024E1C0 /* FlightOptionNode.swift in Sources */,
 				ECE6805C20B94C1D008847D8 /* FlightListController+LayoutDelegate.swift in Sources */,
 				ECE6805020B935C6008847D8 /* FlightInfoModel.swift in Sources */,
 				EC9AA2E620BBC9F300EAAE94 /* AirportModel.swift in Sources */,

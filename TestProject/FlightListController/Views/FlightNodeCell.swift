@@ -86,7 +86,7 @@ final class FlightNodeCell: ASCellNode {
     
     private func layoutHeaderSpec(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         
-        let durationNode = ASCommonSpecs.makeDurationFlightSpec(duration: model.duration)
+        let durationNode = DurationFlightNode(duration: model.duration)
 
         let spacer = ASLayoutSpec()
         spacer.style.width = ASDimension(unit: .auto, value: 12)
@@ -104,8 +104,8 @@ final class FlightNodeCell: ASCellNode {
     
     private func layoutFooterSpec(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
     
+        let price = PriceNode(price: model.price)
         let company = ASCommonSpecs.iconTextVerticalCenterBlock(icon: companyIcon, text: companyNameNode)
-        let price = ASCommonSpecs.makePriceLayoutSpec(price: model.price)
         let rating = ASCommonSpecs.iconTextVerticalCenterBlock(icon: ratingIcon, text: ratingNode)
         
         let spacerRatingPrice = ASLayoutSpec()
