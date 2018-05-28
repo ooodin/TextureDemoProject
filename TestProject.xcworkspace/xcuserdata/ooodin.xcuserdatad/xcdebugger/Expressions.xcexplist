@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FlightInfoModel.init(section:company:rating:direction:):FlightInfoModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String.localizedStringWithFormat(&quot;$%02d&quot;, priceSum)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
